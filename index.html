@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+	<title>St Albans Dog Day</title>
+<!-- 
+<link href='http://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+</head>
+<body>
+  <div class="sponsors">
+    <div class="container">
+       Presented by <a href="" title="St Albans Dog Training">St Albans Dog Training</a> &amp; <a href="http://pawsbuddy.co.uk" title="Paws Buddy">Paws Buddy</a>. Sponsored by <img src="/images/homebase.png" />
+    </div>
+  </div>
+  <div class="header">
+    <div class="container">
+      <div class="calendar">
+        <p class="month">September</p>
+        <p class="date">20<sup>th</sup></p>
+        <p class="time">12:00 - 17:00</p>
+      </div>
+      <h1>St Albans Dog Day</h1>
+      <p class="strapline">
+        An afternoon of dog activities, competitions, fun, &amp; fetch.
+      </p>
+      <ul class="highlights">
+        <li>Have-a-go dog agility</li>
+        <li>Have-a-go dog trick training</li>
+        <li>Rosettes &amp; prizes to be won</li>
+        <li>Entertainment and demonstrations</li>
+        <li>Products &amp; accessories to buy &amp; win</li>
+        <li>Food &amp; refreshments</li>
+      </ul>
+      <div class="address">
+       Oaklands College<br />
+       Hatfield Road<br />
+       St Albans<br />
+       <a href="https://www.google.co.uk/maps/place/Oaklands+College/@51.755021,-0.288178,15z/data=!4m2!3m1!1s0x48763ec411579569:0x228c2c3afcf93487" title="Google map">View on Google maps</a>
+      </div>
+      <p class="social">
+        <a href="http://facebook.com/eventpage" title="Find us on Facebook" class="facebook">Facebook</a>
+      </p>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div id="map"></div>
+  </div>
+  
+  <div class="content">
+    <div class="container">
+      <h2>Itenerary</h2>
+      <p>
+        Stalls, refreshments and events will run throughout the afternoon. We'll have a hog roast, ice creams, great teas coffee from <a href="http://littlevancoffee.com" title="Coffee">Little Soko coffee</a> and plenty of other refreshments.
+      </p>
+      <ul class="schedule">
+        <li>12:00 - Doors and <a href="`#stalls">stalls</a> open</li>
+        <li>12:30 - Competitions registration open</li>
+        <li>13:00 - Competitions begin</li>
+        <li>16:30 - Final competition judging</li>
+        <li>17:00 - That's all folks</li>
+      </ul>
+      <h2 id="competitions">Competitions</h2>
+      <p>
+        Anyone is eligible to enter a dog into a competition. Competitions will include
+      </p>
+      <ul>
+        <li>Most improved rescue dog</li>
+        <li>Golden oldie (dogs over 7 years)</li>
+        <li>Junior Handler (under 16 - minimumum of 5 commands)</li>
+        <li>Longest sit and stay</li>
+        <li>Best trick</li>
+        <li>Speed call (fastest sit and stay)</li>
+        <li>Dog most like its owner</li>
+        <li>Best ball / biscuit catcher</li>
+        <li>Judges wants to take home</li>
+      </ul>
+      <p>
+        Competition registration opens at 12:30pm.
+      </p>  
+
+      <h2 id="stalls">
+        Stalls and vendors
+      </h2>
+      <p>We will have a wide variety of stalls and stands on the day, including:</p>
+      <ul>
+        <li>Alice Cuts</li>
+        <li>Pet Relief</li>
+        <li>Oscar dog food</li>
+        <li>Kim Photos</li>
+        <li>Forever Young</li>
+        <li>Poppy and Rufus</li>
+        <li>Van Hound</li>
+        <li>Nuffield Health</li>
+        <li>Cherry Vets</li>
+        <li>Sand Art</li>
+        <li>Baubles and Treasures</li>
+        <li>Let's Waffle</li>
+        <li>Woof Tastic</li>
+        <li>Metro Bank</li>
+        <li>Cats Protection League</li>
+      </ul>
+      <p>
+        If you would like a stall or information on getting involved, please contact us on <a href="mailto:info@stalbansdogday.co.uk">info@stalbansdogday.co.uk</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p>Supported by</p>
+      <ul>
+        <li>
+          <a href="" title="">Selena's company</a>
+          <p>Selena's company tag line</p>
+        </li>
+        <li>
+          <a href="http://pawsbuddy.co.uk" title="Paws Buddy">Paws Buddy</a>
+          <p>Pet setting and dog walking services in the St Albans area.</p>
+        </li>
+        <li>And other kind friends of St Albans dogs</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([51.755058, -0.287996], 13);
+    L.tileLayer('http://{s}.tiles.mapbox.com/v3/philhawksworth.j9o86ej8/{z}/{x}/{y}.png', {
+      attribution: '<a href="http://mapbox.com">Mapbox</a>',
+      maxZoom: 18,
+      scrollWheelZoom: false,
+      touchZoom: false
+    }).addTo(map);
+    var marker = L.marker([51.755058, -0.287996]).addTo(map);
+  </script>
+</body>
+</html>
