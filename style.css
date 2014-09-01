@@ -137,8 +137,7 @@ h3 { font-size: 43px; }
 
 
 #map { 
-  height: 300px; 
-  /*box-shadow: 0 0 4px rgba(0,0,0,0.4);*/
+  height: 200px; 
   z-index:50;
   margin: -30px;
 }
@@ -249,6 +248,11 @@ ul {
   .strapline {
     font-size: 1.3em;
   }
+
+  #map { 
+    height: 300px; 
+  }
+
 
 }
 
