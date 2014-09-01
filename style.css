@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 
 h2 { font-size: 40px; }
-h3 { font-size: 43px; }
+h3 { font-size: 33px; }
 
 .container  {
   text-align: left;
@@ -130,11 +130,35 @@ h3 { font-size: 43px; }
   text-align: center;
 }
 
-.footer .container {
-  background-color: #eee;
-  border-top: solid 2px #ddd;
-}
 
+.footer  {
+  background-color: #333;
+  font-size: 0.8em;
+  border-bottom:solid 8px #3c006b;
+}
+  .footer .container {
+    background-color: #222;
+    color:#bbb;
+     border-bottom:solid 8px #20003c;
+     margin-bottom: -8px;
+  }
+
+  .footer a:link,
+  .footer a:visited {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: solid 1px #ad164a;
+  }
+  .footer a:hover,
+  .footer a:focus {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+  }
+
+  .footer h3 {
+    color: #ddd;
+  }
 
 #map { 
   height: 200px; 
@@ -191,6 +215,7 @@ ul {
   font-size: 0.6em;
   color:#333;
   z-index: 110;
+  text-shadow: none;
 }
 
   .calendar .month {
@@ -214,6 +239,16 @@ ul {
     margin-top: 1em;
   }
 
+  .content a:link,
+  .content a:visited {
+    color: #ad164a;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+  }
+  .content a:hover,
+  .content a:focus {
+    border-bottom: solid 1px #baa3c7;
+  }
 
 @media all and (min-width: 400px) {
 
