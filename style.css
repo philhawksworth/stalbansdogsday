@@ -128,6 +128,7 @@ h3 { font-size: 28px; }
   padding: 0;
 }
 
+
 .highlights {
   text-align: left;
   margin:2em auto 0;
@@ -204,6 +205,13 @@ h3 { font-size: 28px; }
     text-decoration: none;
     border-bottom: solid 1px #ddd;
   }
+
+
+a.facebook:link,
+a.facebook:visited {
+  border-style: none;
+}
+
 
 p {
   margin: 0em 0 1em;
