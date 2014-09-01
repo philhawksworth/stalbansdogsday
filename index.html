@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>St Albans Dog Day</title>
+	<title>St Albans Dogs Day</title>
 <!-- 
 <link href='http://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" href="/style.css">
@@ -20,7 +20,7 @@
         <p class="date">20<sup>th</sup></p>
         <p class="time">12:00 - 17:00</p>
       </div>
-      <h1>St Albans Dog Day</h1>
+      <h1>St Albans Dogs Day</h1>
       <p class="strapline">
         An afternoon of dog activities, competitions, fun, &amp; fetch.
       </p>
@@ -28,7 +28,7 @@
         <li>Have-a-go dog agility</li>
         <li>Have-a-go dog trick training</li>
         <li>Rosettes &amp; prizes to be won</li>
-        <li>Entertainment and demonstrations</li>
+        <li>Live music &amp; demonstrations</li>
         <li>Products &amp; accessories to buy &amp; win</li>
         <li>Food &amp; refreshments</li>
       </ul>
@@ -125,12 +125,14 @@
 
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script>
-    var map = L.map('map').setView([51.755058, -0.287996], 13);
+    var map = L.map('map', {
+      center: [51.755058, -0.287996],
+      zoom: 13,
+      touchZoom: false,
+      scrollWheelZoom: false
+    });
     L.tileLayer('http://{s}.tiles.mapbox.com/v3/philhawksworth.j9o86ej8/{z}/{x}/{y}.png', {
-      attribution: '<a href="http://mapbox.com">Mapbox</a>',
-      maxZoom: 18,
-      scrollWheelZoom: false,
-      touchZoom: false
+      attribution: '<a href="http://mapbox.com">Mapbox</a>'
     }).addTo(map);
     var marker = L.marker([51.755058, -0.287996]).addTo(map);
   </script>
